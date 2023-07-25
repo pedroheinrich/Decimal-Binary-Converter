@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    }
+
+    :root {
+        --bg-color: #201b2c;
+        --second-bg-color: #323946;
+        --text-color: #fff;
+        --main-color: #00ff88;
+    }
+    
+
+    body {
+        background: var(--bg-color);
+        
+    }
+
+    .container {
+        background-color: var(--second-bg-color);
+        width: 100vmin;
+        max-width: 37.5em;
+        padding: 3em 2.5em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 15px;
+        box-shadow: 0px 3px 10px var(--main-color);
+
+    }
+
+    h2 {
+        font-size: 1.8em;
+        color: var(--main-color);
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.1em;
+    }
+    h3 {
+        font-size: 0.8em;
+        color: var(--main-color);
+        text-align: center;
+        font-weight: 100;
+        letter-spacing: 0.5px;
+        margin-bottom: 2em;
+    }
+    .wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1.8em;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.3em;
+        font-weight: 500;
+        color: var(--text-color);
+        
+    }
+
+    input {
+    position: relative;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 0.4em;
+    border-radius: 8px;
+    border: 1.5px solid #43405c;
+    color: var(--second-bg-color);
+    outline: none;
+
+    }
+    input:focus {
+        border-color: var(--main-color);
+    }
+    
+
+
+    #error-msg {
+        text-align: center;
+        margin-top: 1.25em;
+        color: #ff4362;
+    }
